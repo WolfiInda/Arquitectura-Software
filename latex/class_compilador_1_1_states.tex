@@ -1,0 +1,63 @@
+\hypertarget{class_compilador_1_1_states}{}\doxysection{Compilador\+::States Class Reference}
+\label{class_compilador_1_1_states}\index{Compilador::States@{Compilador::States}}
+
+
+Clase padre de la State Machine.  
+
+
+
+
+{\ttfamily \#include $<$States.\+h$>$}
+
+Inheritance diagram for Compilador\+::States\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{class_compilador_1_1_states}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_states_aedc045ae3e9fb82a091b2f6be6830cdb}\label{class_compilador_1_1_states_aedc045ae3e9fb82a091b2f6be6830cdb}} 
+virtual \mbox{\hyperlink{class_compilador_1_1_states}{States}} $\ast$ {\bfseries Next\+Char} (const char m\+\_\+\+Next\+Char, \mbox{\hyperlink{class_compilador_1_1_analizador_lexico}{Analizador\+Lexico}} $\ast$m\+\_\+\+Analizador)=0
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_states_a4b79bac6804d1697853b51c21e39f61b}\label{class_compilador_1_1_states_a4b79bac6804d1697853b51c21e39f61b}} 
+virtual void {\bfseries Finish} (\mbox{\hyperlink{class_compilador_1_1_analizador_lexico}{Analizador\+Lexico}} $\ast$m\+\_\+\+Analizador)=0
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_states_acbcb4a4a46ceee5e220afab45e592c54}\label{class_compilador_1_1_states_acbcb4a4a46ceee5e220afab45e592c54}} 
+bool {\bfseries is\+Bool} ()
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_states_a12ff3fda4da3c930c4e10490dbb3321a}\label{class_compilador_1_1_states_a12ff3fda4da3c930c4e10490dbb3321a}} 
+bool {\bfseries is\+Digit} (char Digit)
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_states_a34d4cac0650adf4344c53db6852f6419}\label{class_compilador_1_1_states_a34d4cac0650adf4344c53db6852f6419}} 
+bool {\bfseries is\+Letter} (char Letter)
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_states_a5139012a4bc84596d995e331d094140e}\label{class_compilador_1_1_states_a5139012a4bc84596d995e331d094140e}} 
+bool {\bfseries is\+Constant\+Bool} (string Buffer)
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_states_a8c0f4180117afce539cc3b69234fc483}\label{class_compilador_1_1_states_a8c0f4180117afce539cc3b69234fc483}} 
+bool {\bfseries is\+Reserved} (string Buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_states_aced88b5839142eafb158beb7b7b2c27e}\label{class_compilador_1_1_states_aced88b5839142eafb158beb7b7b2c27e}} 
+\mbox{\hyperlink{class_compilador_1_1_analizador_lexico}{Analizador\+Lexico}} $\ast$ {\bfseries Scanner}
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_states_aa2c1104d2b62987fb012143e8c5b125e}\label{class_compilador_1_1_states_aa2c1104d2b62987fb012143e8c5b125e}} 
+string {\bfseries m\+\_\+\+Buffer}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase padre de la State Machine. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000013}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Compilador/\+Compilador/States.\+h\item 
+Compilador/\+Compilador/States.\+cpp\end{DoxyCompactItemize}

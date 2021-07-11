@@ -1,0 +1,85 @@
+\hypertarget{namespace_compilador}{}\doxysection{Compilador Namespace Reference}
+\label{namespace_compilador}\index{Compilador@{Compilador}}
+
+
+Estado para que el analizador lexico lea Comentarios.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_compilador_1_1_analizador_lexico}{Analizador\+Lexico}}
+\begin{DoxyCompactList}\small\item\em Analizador que añade \mbox{\hyperlink{class_compilador_1_1_token}{Token}} o Error, y lee codigo del compilador. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_manager}{Manager}}
+\begin{DoxyCompactList}\small\item\em Conexion entre el analizador lexico y la interfaz del compilador. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_error_manager}{Error\+Manager}}
+\begin{DoxyCompactList}\small\item\em En caso de que un haya un error en la state machine esta clase lo reportara. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_first_state}{First\+State}}
+\begin{DoxyCompactList}\small\item\em Estado principal para identificar a que estado tiene que pasar. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_state___c_h_a_r}{State\+\_\+\+CHAR}}
+\begin{DoxyCompactList}\small\item\em Estado para que el analizador lexico lea Char. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_state___c_o_m_m_e_n_t}{State\+\_\+\+COMMENT}}
+\item 
+class \mbox{\hyperlink{class_compilador_1_1_state___f_l_o_a_t}{State\+\_\+\+FLOAT}}
+\begin{DoxyCompactList}\small\item\em Estado para que el analizador lexico lea Floats. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_state___i_d}{State\+\_\+\+ID}}
+\begin{DoxyCompactList}\small\item\em Estado para que el analizador lexico reconozca el ID. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_state___i_n_t}{State\+\_\+\+INT}}
+\begin{DoxyCompactList}\small\item\em Estado para que el analizador lexico lea enteros. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_state___o_l_o_g_i_c}{State\+\_\+\+OLOGIC}}
+\begin{DoxyCompactList}\small\item\em Estado para que el analizador lexico lea Operadores logicos. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_state___r_e_l_a_c_i_o_n_a_l}{State\+\_\+\+RELACIONAL}}
+\begin{DoxyCompactList}\small\item\em Estado para que el analizador lexico lea Operadores relacionales. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_state___s_t_r_i_n_g}{State\+\_\+\+STRING}}
+\begin{DoxyCompactList}\small\item\em Estado para que el analizador lexico lea Strings. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_states}{States}}
+\begin{DoxyCompactList}\small\item\em Clase padre de la State Machine. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_compilador_1_1_token}{Token}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_compilador_ab19f8af2f37b3484c95618be5c9f00aa}{Token\+Type}} \{ \newline
+{\bfseries UNDEFINED} = 0
+, {\bfseries ID}
+, {\bfseries INT}
+, {\bfseries FLOAT}
+, \newline
+{\bfseries STRING}
+, {\bfseries LOGIC}
+, {\bfseries CHAR}
+, {\bfseries RESERVED}
+, \newline
+{\bfseries ORELACIONAL}
+, {\bfseries OARITMETICO}
+, {\bfseries OLOGICO}
+, {\bfseries NOT}
+, \newline
+{\bfseries SEPARATOR}
+, {\bfseries ODIMENSION}
+, {\bfseries OAGRUPATION}
+, {\bfseries ASSIGNATION}
+ \}
+\begin{DoxyCompactList}\small\item\em Tokenizador para reconocer el Lexema dependiendo del estado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Estado para que el analizador lexico lea Comentarios. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000006}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_compilador_ab19f8af2f37b3484c95618be5c9f00aa}\label{namespace_compilador_ab19f8af2f37b3484c95618be5c9f00aa}} 
+\index{Compilador@{Compilador}!TokenType@{TokenType}}
+\index{TokenType@{TokenType}!Compilador@{Compilador}}
+\doxysubsubsection{\texorpdfstring{TokenType}{TokenType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_compilador_ab19f8af2f37b3484c95618be5c9f00aa}{Compilador\+::\+Token\+Type}}}
+
+
+
+Tokenizador para reconocer el Lexema dependiendo del estado. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000014}{Bug}}]No know Bugs \end{DoxyRefDesc}

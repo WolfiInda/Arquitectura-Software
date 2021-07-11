@@ -1,0 +1,48 @@
+\hypertarget{class_compilador_1_1_analizador_lexico}{}\doxysection{Compilador\+::Analizador\+Lexico Class Reference}
+\label{class_compilador_1_1_analizador_lexico}\index{Compilador::AnalizadorLexico@{Compilador::AnalizadorLexico}}
+
+
+Analizador que anade \mbox{\hyperlink{class_compilador_1_1_token}{Token}} o Error, y lee codigo del compilador.  
+
+
+
+
+{\ttfamily \#include $<$Analizador\+Lexico.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_analizador_lexico_a632083615214a75e44c7aadcdeff882d}\label{class_compilador_1_1_analizador_lexico_a632083615214a75e44c7aadcdeff882d}} 
+{\bfseries Analizador\+Lexico} (\mbox{\hyperlink{class_compilador_1_1_error_manager}{Error\+Manager}}$^\wedge$ \+\_\+\+Error\+Manager)
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_analizador_lexico_a4f62685b2ec5d6b42762c8d0c25e5915}\label{class_compilador_1_1_analizador_lexico_a4f62685b2ec5d6b42762c8d0c25e5915}} 
+bool {\bfseries Parse} (const char $\ast$\+\_\+\+Source\+Code)
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_analizador_lexico_aef8980a1e041a3aec06da2f7efd62e9c}\label{class_compilador_1_1_analizador_lexico_aef8980a1e041a3aec06da2f7efd62e9c}} 
+void {\bfseries add\+Token} (int line, string new\+Token, Token\+Type Type)
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_analizador_lexico_ac628384438cf1585076ca2fc575c09a5}\label{class_compilador_1_1_analizador_lexico_ac628384438cf1585076ca2fc575c09a5}} 
+void {\bfseries add\+Error} (string new\+Error)
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_analizador_lexico_ab38c74e16dee082ff01f60f7422b33da}\label{class_compilador_1_1_analizador_lexico_ab38c74e16dee082ff01f60f7422b33da}} 
+int {\bfseries get\+Line\+Num} ()
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_analizador_lexico_ae4ff6d2cd33cb0e30fb9e8b68fafb7e1}\label{class_compilador_1_1_analizador_lexico_ae4ff6d2cd33cb0e30fb9e8b68fafb7e1}} 
+vector$<$ \mbox{\hyperlink{class_compilador_1_1_token}{Token}} $>$ {\bfseries get\+Token} ()
+\item 
+\mbox{\Hypertarget{class_compilador_1_1_analizador_lexico_a71fb62ae85dda1c6b358c057dc39e8fc}\label{class_compilador_1_1_analizador_lexico_a71fb62ae85dda1c6b358c057dc39e8fc}} 
+void {\bfseries Delete\+Tokens} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Analizador que anade \mbox{\hyperlink{class_compilador_1_1_token}{Token}} o Error, y lee codigo del compilador. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Compilador/\+Compilador/Analizador\+Lexico.\+h\item 
+Compilador/\+Compilador/Analizador\+Lexico.\+cpp\end{DoxyCompactItemize}
